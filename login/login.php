@@ -16,7 +16,7 @@
       }
       else
       {  
-         echo "<script>alert('Neuspelo')</script>";  // Mozda doraditi ovde
+         echo "<script>alert('Neuspelo')</script>"; 
       }  
    }  
 ?>
