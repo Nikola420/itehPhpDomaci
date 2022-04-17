@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Readex+Pro:wght@300&display=swap');
+
+:root {
+    --darker-grey: #1a1a1a;
+    --lightiest-grey: #272727;
+    --lighter-grey: #1f1f1f;
+    --darker-purple: #3E065F;
+    --medium-purple: #700B97;
+    --lighter-purple: #8E05C2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--darker-grey) !important;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-title {
+    font-family: 'Oswald', sans-serif;
+    color: var(--medium-purple);
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+#movies {
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 300;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+    color: whitesmoke;
+  }
+  
+#movies td, #movies th {
+    border: 1px solid var(--darker-grey);
+    padding: 8px;
+}
+
+
+
+#movies .star-rating-row {
+    overflow: hidden;
+    text-align: center;
+}
+
+#movies .star-rating {
+    float: left;
+}
+
+#movies .star-rating-img {
+    overflow: hidden;
+}
+
+#movies .oscar-won-row {
+    overflow: hidden;
+    text-align: center;
+}
+
+#movies .oscar-won {
+    float: left;
+}
+
+#movies .oscar-won-img {
+    overflow: hidden;
+}
+
+#movies .anchors-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#movies .anchors-row span {
+    color: var(--lighter-purple);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#movies .anchors-row span:hover {
+    color: var(--medium-purple);
+}
+  
+#movies tr:nth-child(even){background-color: var(--lighter-grey);}
+  
+#movies tr:hover {background-color: var(--lightiest-grey);}
+  
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--medium-purple);
+    color: white;
+}
